@@ -9,6 +9,12 @@
       "open-to-dot-dot-dot/tests/*": ["tests/*"],
       "open-to-dot-dot-dot/*": ["app/*"],
       "*": ["types/*"]
-    }
+    },
+  },
+  "glint": {
+    "environment": [
+      "ember-loose",
+      "ember-template-imports",
+    ]
   }
 }
