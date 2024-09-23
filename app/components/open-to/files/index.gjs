@@ -12,17 +12,17 @@ export default class OpenToFiles extends Component {
   <template>
     <ul
       role='list'
-      class='grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8'
+      class='grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2 sm:gap-x-6'
     >
       {{#each this.fileQueue.files as |file|}}
         <li>
-          <div class='mx-auto w-32 h-32 relative'>
-            <OpenToFilesPreview @file={{file.file}} />
+          <div class='mx-auto w-64 h-64 relative bg-white'>
+            <OpenToFilesPreview @file={{file}} />
           </div>
         </li>
       {{/each}}
       <li>
-        <div class='mx-auto w-32 h-32 relative'>
+        <div class='mx-auto w-64 h-64 relative'>
           <OpenToFilesUpload />
         </div>
       </li>

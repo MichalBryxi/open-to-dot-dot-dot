@@ -19,9 +19,16 @@ export default class OpenToExport extends Component {
 
   @action
   exportImages() {
-    domtoimage.toBlob(document.getElementById('my-node')).then(function (blob) {
-      window.saveAs(blob, 'my-node.png');
-    });
+    for (const file of this.fileQueue.files) {
+      domtoimage
+        .toJpeg(document.getElementById(file.id))
+        .then(function (dataUrl) {
+          var link = document.createElement('a');
+          link.download = 'my-image-name.jpeg';
+          link.href = dataUrl;
+          link.click();
+        });
+    }
   }
 
   <template>
