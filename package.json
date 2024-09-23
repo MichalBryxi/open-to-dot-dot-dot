@@ -83,6 +83,7 @@
     "autoprefixer": "^10.0.0",
     "concurrently": "^8.2.2",
     "decorator-transforms": "^2.2.0",
+    "dom-to-image-more": "^3.4.5",
     "ember-auto-import": "^2.7.4",
     "ember-cli": "~5.11.0",
     "ember-cli-babel": "^8.2.0",

@@ -6,13 +6,22 @@ import OpenToFilesPreview from 'open-to-dot-dot-dot/components/open-to/files/pre
 import OpenToFilesUpload from 'open-to-dot-dot-dot/components/open-to/files/upload';
 import { t } from 'ember-intl';
 import { Button } from '@frontile/buttons';
+import domtoimage from 'dom-to-image-more';
+import { action } from '@ember/object';
+import { on } from '@ember/modifier';
 
 export default class OpenToExport extends Component {
   @service fileQueue;
 
   get isExportDisabled() {
-    console.log(this.fileQueue.files);
     return this.fileQueue.files.length === 0;
+  }
+
+  @action
+  exportImages() {
+    domtoimage.toBlob(document.getElementById('my-node')).then(function (blob) {
+      window.saveAs(blob, 'my-node.png');
+    });
   }
 
   <template>
@@ -21,7 +30,7 @@ export default class OpenToExport extends Component {
         {{t 'export.button'}}
       </Button>
     {{else}}
-      <Button @intent='primary'>
+      <Button @intent='primary' {{on 'click' this.exportImages}}>
         {{t 'export.button'}}
       </Button>
 
