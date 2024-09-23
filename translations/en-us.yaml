@@ -1,2 +1,6 @@
 application:
-  name: Open To ...
+  name: '#OpenToDotDotDot'
+  subtitle: LinkedIn avatar generator
+drag-and-drop:
+  instructions: Add image
+  drop-now: Drop it!
