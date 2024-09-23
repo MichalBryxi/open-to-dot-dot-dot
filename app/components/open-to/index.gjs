@@ -4,6 +4,7 @@ import { inject as service } from '@ember/service';
 import FileQueueService from 'ember-file-upload/services/file-queue';
 import { t } from 'ember-intl';
 import OpenToFiles from './files';
+import OpenToToggles from './toggles';
 
 export default class OpenTo extends Component {
   @service fileQueue;
@@ -33,14 +34,17 @@ export default class OpenTo extends Component {
             </div>
           </div>
 
-          <div
-            class='divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow'
-          >
+          <div class='px-4 py-5 sm:px-6'>
             <div class='px-4 py-5 sm:p-6'>
               <OpenToFiles />
             </div>
           </div>
+
+          <div class='px-4 py-5 sm:px-6'>
+            <OpenToToggles />
+          </div>
         </div>
+
       </div>
     </div>
   </template>
