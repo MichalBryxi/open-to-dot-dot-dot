@@ -1,21 +1,12 @@
 import Component from '@glimmer/component';
-import FileDropzone from 'ember-file-upload/components/file-dropzone';
-import { inject as service } from '@ember/service';
-import FileQueueService from 'ember-file-upload/services/file-queue';
 import { t } from 'ember-intl';
 import OpenToFiles from './files';
 import OpenToToggles from './toggles';
+import OpenToExport from './export';
 
 export default class OpenTo extends Component {
-  @service fileQueue;
-
-  url(file) {
-    return URL.createObjectURL(file);
-  }
-
   <template>
     <div class='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
-      {{! We've used 3xl here, but feel free to try other max-widths based on your needs }}
       <div class='mx-auto max-w-3xl'>
 
         <div
@@ -42,6 +33,10 @@ export default class OpenTo extends Component {
 
           <div class='px-4 py-5 sm:px-6'>
             <OpenToToggles />
+          </div>
+
+          <div class='px-4 py-5 sm:px-6'>
+            <OpenToExport />
           </div>
         </div>
 

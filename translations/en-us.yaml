@@ -4,3 +4,9 @@ application:
 drag-and-drop:
   instructions: Add image
   drop-now: Drop it!
+toggles:
+  text: Text
+  colour-start: Colour start
+  colour-stop: Colour stop
+export:
+  button: Export

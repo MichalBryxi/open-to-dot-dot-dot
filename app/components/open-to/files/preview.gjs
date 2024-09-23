@@ -6,6 +6,7 @@ import { t } from 'ember-intl';
 
 export default class OpenToFiles extends Component {
   @service fileQueue;
+  @service settings;
 
   objectURL(file) {
     return URL.createObjectURL(file);
@@ -31,11 +32,11 @@ export default class OpenToFiles extends Component {
             id='linearGradient7'
             inkscape:collect='always'
           ><stop
-              style='stop-color:#00e503;stop-opacity:1;'
+              style='stop-color:{{this.settings.colourStart}};stop-opacity:1;'
               offset='0'
               id='stop7'
             /><stop
-              style='stop-color:#12e500;stop-opacity:0;'
+              style='stop-color:{{this.settings.colourStop}};stop-opacity:0;'
               offset='1'
               id='stop8'
             /></linearGradient><linearGradient
@@ -88,7 +89,7 @@ export default class OpenToFiles extends Component {
             xlink:href='#curve'
             id='textPath1'
             dx='2.72'
-          >#OPENTOWORK</textPath></text></svg>
+          >{{this.settings.text}}</textPath></text></svg>
     </div>
   </template>
 }
