@@ -1,57 +1,18 @@
-# open-to-dot-dot-dot
+# #OpenTo...
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Ever since [LinkedIn](https://www.linkedin.com) has [introduced](https://www.linkedin.com/help/linkedin/answer/a507508/let-recruiters-know-you-re-open-to-work?lang=en) the `#OpenToWork` / `#OpenToHire`overlays for people's avatars, this feature started living a life of it's own. While some petty humans advise against using this feature, others [take it to another level](https://www.linkedin.com/posts/courtneysummer_desperate-opentowork-opentowork-activity-7241410975193513984-vexX/?utm_source=share&utm_medium=member_desktop) and own it.
 
-## Prerequisites
+Sadly this feature is severely limited and apart from work/hire user has no say in customising the message.
 
-You will need the following things properly installed on your computer.
+And I think that's sad. So I built this little app for everyone to use and create their custom made `#OpenTo...` banners. Currently one can chose:
 
-- [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/)
-- [pnpm](https://pnpm.io/)
-- [Ember CLI](https://cli.emberjs.com/release/)
-- [Google Chrome](https://google.com/chrome/)
+- Custom message. E.g: `#OpenToFun!`
+- Starting gradient colour
+- Stopping gradient colour
 
-## Installation
+The app is deployed on: https://open-to-dot-dot-dot.netlify.app
 
-- `git clone <repository-url>` this repository
-- `cd open-to-dot-dot-dot`
-- `pnpm install`
+## Demo
 
-## Running / Development
+[![Watch the video](./docs/preview.m4v)](./docs/preview.m4v)
 
-- `pnpm start`
-- Visit your app at [http://localhost:4200](http://localhost:4200).
-- Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-- `pnpm test`
-- `pnpm test:ember --server`
-
-### Linting
-
-- `pnpm lint`
-- `pnpm lint:fix`
-
-### Building
-
-- `pnpm ember build` (development)
-- `pnpm build` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-- [ember.js](https://emberjs.com/)
-- [ember-cli](https://cli.emberjs.com/release/)
-- Development Browser Extensions
-  - [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  - [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
