@@ -14,12 +14,16 @@ export default class OpenToFiles extends Component {
 
   <template>
     <div class='w-full h-full bg-white' id={{@file.id}}>
-      <div class='w-full h-full rounded-full overflow-hidden flex -space-x-64'>
-        <img src={{this.objectURL @file.file}} />
+      <div class='w-full h-full rounded-full overflow-hidden relative'>
+        <img
+          src={{this.objectURL @file.file}}
+          class='w-full aspect-square relative'
+        />
 
         <svg
           viewBox='0 0 500 500'
           version='1.1'
+          class='w-full aspect-square absolute left-0 top-0'
           id='svg1'
           sodipodi:docname='open-to-template.svg'
           xml:space='preserve'
