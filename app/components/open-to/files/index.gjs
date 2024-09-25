@@ -17,12 +17,14 @@ export default class OpenToFiles extends Component {
             <OpenToFilesPreview @file={{file}} />
           </div>
         </li>
+      {{else}}
+        <li>
+          <div class='mx-auto w-full aspect-square relative'>
+            <OpenToFilesUpload />
+          </div>
+        </li>
+
       {{/each}}
-      <li>
-        <div class='mx-auto w-full aspect-square relative'>
-          <OpenToFilesUpload />
-        </div>
-      </li>
     </ul>
   </template>
 }
