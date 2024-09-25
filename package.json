@@ -136,5 +136,8 @@
   "exports": {
     "./tests/*": "./tests/*",
     "./*": "./app/*"
+  },
+  "dependencies": {
+    "ember-phosphor-icons": "^0.3.0"
   }
 }
