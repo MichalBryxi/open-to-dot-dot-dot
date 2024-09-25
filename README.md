@@ -14,4 +14,4 @@ The app is deployed on: https://open-to-dot-dot-dot.netlify.app
 
 ## Demo
 
-[![Watch the video](./docs/demo.gif)](./docs/demo.gif)
+[![Watch the video](./docs/demo.m4v)](./docs/demo.m4v)
