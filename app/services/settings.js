@@ -3,6 +3,6 @@ import { tracked } from '@glimmer/tracking';
 
 export default class SettingsService extends Service {
   @tracked text = '#OpenTo...';
-  @tracked colourStart = '#00e503';
-  @tracked colourStop = '#12e500';
+  @tracked colourStart = '#a855f7';
+  @tracked colourStop = '#ec4899';
 }
