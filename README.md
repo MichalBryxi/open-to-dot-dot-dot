@@ -10,7 +10,7 @@ And I think that's sad. So I built this little app for everyone to use and creat
 - Starting gradient colour
 - Stopping gradient colour
 
-The app is deployed on: https://open-to-dot-dot-dot.netlify.app
+The app is deployed on: https://open-to-dot-dot-dot.pudr.com
 
 ## Demo
 
