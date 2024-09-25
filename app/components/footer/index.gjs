@@ -1,6 +1,7 @@
 import Component from '@glimmer/component';
 import GitHubLogo from 'ember-phosphor-icons/components/ph-github-logo';
 import LinkedInLogo from 'ember-phosphor-icons/components/ph-linkedin-logo';
+import TipJar from 'ember-phosphor-icons/components/ph-tip-jar';
 import { t } from 'ember-intl';
 
 export default class OpenToFiles extends Component {
@@ -20,6 +21,14 @@ export default class OpenToFiles extends Component {
     >
       <LinkedInLogo class='inline' />
       {{t 'footer.linked-in'}}
+    </a>
+    <a
+      href='https://buymeacoffee.com/michalbryxi'
+      class='pr-6 text-gray-500 hover:text-black'
+      target='_blank'
+    >
+      <TipJar class='inline' />
+      {{t 'footer.tip-jar'}}
     </a>
   </template>
 }
