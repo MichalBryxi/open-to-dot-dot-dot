@@ -3,6 +3,7 @@ import { t } from 'ember-intl';
 import OpenToFiles from './files';
 import OpenToToggles from './toggles';
 import OpenToExport from './export';
+import Footer from '../footer';
 
 export default class OpenTo extends Component {
   <template>
@@ -37,6 +38,10 @@ export default class OpenTo extends Component {
 
           <div class='px-4 py-5 sm:px-6'>
             <OpenToExport />
+          </div>
+
+          <div class='px-4 py-5 sm:px-6'>
+            <Footer />
           </div>
         </div>
 

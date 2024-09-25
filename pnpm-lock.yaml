@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      ember-phosphor-icons:
+        specifier: ^0.3.0
+        version: 0.3.0(@babel/core@7.25.2)
     devDependencies:
       '@babel/core':
         specifier: ^7.25.2
@@ -4071,6 +4075,9 @@ packages:
     engines: {node: 16.* || >= 18}
     peerDependencies:
       ember-source: '>= 3.28.0'
+
+  ember-phosphor-icons@0.3.0:
+    resolution: {integrity: sha512-wUfhgu0WEr4yszpRuQL9Yg4zmlYLVQ8FhxyTiD8Bl59ymMihzvPXFtVqIvNEeeyGO7RVJxomJiEx2Wp6fxKoGQ==}
 
   ember-qunit@8.1.0:
     resolution: {integrity: sha512-55/xqvVQwhiNcnh/tCzWyvlYzrYqwDY0/cIPyDQbAxGKtkUt9jCfRUGllfyOofC6LX0fL/0fIi+5e9sg1m6vXw==}
@@ -13264,6 +13271,15 @@ snapshots:
       '@simple-dom/document': 1.4.0
       ember-source: 5.11.0(@glimmer/component@1.1.2(@babel/core@7.25.2))(@glint/template@1.4.0)(rsvp@4.8.5)(webpack@5.94.0)
     transitivePeerDependencies:
+      - supports-color
+
+  ember-phosphor-icons@0.3.0(@babel/core@7.25.2):
+    dependencies:
+      '@embroider/addon-shim': 1.8.9
+      '@glimmer/component': 1.1.2(@babel/core@7.25.2)
+      decorator-transforms: 1.2.1(@babel/core@7.25.2)
+    transitivePeerDependencies:
+      - '@babel/core'
       - supports-color
 
   ember-qunit@8.1.0(@ember/test-helpers@3.3.1(@babel/core@7.25.2)(@glint/template@1.4.0)(ember-source@5.11.0(@glimmer/component@1.1.2(@babel/core@7.25.2))(@glint/template@1.4.0)(rsvp@4.8.5)(webpack@5.94.0))(webpack@5.94.0))(@glint/template@1.4.0)(ember-source@5.11.0(@glimmer/component@1.1.2(@babel/core@7.25.2))(@glint/template@1.4.0)(rsvp@4.8.5)(webpack@5.94.0))(qunit@2.22.0):

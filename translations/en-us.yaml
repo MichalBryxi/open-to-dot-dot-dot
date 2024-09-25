@@ -10,3 +10,6 @@ toggles:
   colour-stop: Colour stop
 export:
   button: Export
+footer:
+  github: GitHub
+  linked-in: Original LinkedIn post
