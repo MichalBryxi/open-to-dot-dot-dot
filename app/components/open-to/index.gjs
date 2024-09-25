@@ -15,12 +15,14 @@ export default class OpenTo extends Component {
         >
           <div class='px-4 py-5 sm:px-6'>
             <div>
-              <span class='text-3xl font-black'>
+              <span
+                class='tracking-wider text-3xl font-black bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%'
+              >
                 {{t 'application.name'~}}
               </span>
             </div>
             <div>
-              <span class='text-xs font-light text-gray-500'>
+              <span class='font-light text-gray-500'>
                 {{t 'application.subtitle'}}
               </span>
             </div>
