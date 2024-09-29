@@ -5,6 +5,9 @@ import { Input } from '@frontile/forms';
 import { inject as service } from '@ember/service';
 import set from 'ember-set-helper/helpers/set';
 import { hash } from '@ember/helper';
+import { ToggleButton } from '@frontile/buttons';
+import Circle from 'ember-phosphor-icons/components/ph-circle';
+import Square from 'ember-phosphor-icons/components/ph-square';
 
 export default class OpenToToggles extends Component {
   @service settings;
@@ -31,6 +34,17 @@ export default class OpenToToggles extends Component {
         @onChange={{set this.settings 'colourStop'}}
         @classes={{hash input='p-1 h-11'}}
       />
+      <ToggleButton
+        @isSelected={{this.settings.cropToCircle}}
+        @onChange={{set this.settings 'cropToCircle'}}
+        @label={{t 'toggles.crop-to-circle'}}
+      >
+        {{#if this.settings.cropToCircle}}
+          <Circle />
+        {{else}}
+          <Square />
+        {{/if}}
+      </ToggleButton>
     </form>
   </template>
 }

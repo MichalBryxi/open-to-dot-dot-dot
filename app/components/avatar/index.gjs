@@ -5,7 +5,10 @@ import AvatarBadge from './badge';
 export default class OpenToFiles extends Component {
   <template>
     <div class='w-full aspect-square' id={{@id}}>
-      <div class='w-full aspect-square rounded-full overflow-hidden relative'>
+      <div
+        class='w-full aspect-square rounded-full overflow-hidden relative'
+        ...attributes
+      >
         <AvatarImage @file={{@file}} />
         <AvatarBadge />
       </div>
