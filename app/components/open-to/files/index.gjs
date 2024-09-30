@@ -11,7 +11,7 @@ export default class OpenToFiles extends Component {
       <ul role='list' class='grid grid-cols-1 gap-x-4 gap-y-8 sm:gap-x-6'>
         {{#each queue.files as |file|}}
           <li>
-            <div class='mx-auto w-full aspect-square relative bg-white'>
+            <div class='mx-auto w-full aspect-square relative'>
               <OpenToFilesPreview @file={{file}} />
             </div>
           </li>

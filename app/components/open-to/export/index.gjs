@@ -20,9 +20,11 @@ export default class OpenToExport extends Component {
   @action
   exportImages() {
     for (const file of this.fileQueue.files) {
-      html2canvas(document.getElementById(file.id)).then((canvas) => {
+      html2canvas(document.getElementById(file.id), {
+        backgroundColor: null,
+      }).then((canvas) => {
         var link = document.createElement('a');
-        link.download = 'my-image-name.jpeg';
+        link.download = 'my-image-name.png';
         link.href = canvas.toDataURL('image/png');
         link.click();
       });
