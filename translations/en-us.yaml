@@ -12,6 +12,7 @@ toggles:
   crop-to:
     circle: Circle
     square: Square
+  background-colour: Background colour
 export:
   button: Export
 footer:

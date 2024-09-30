@@ -44,34 +44,6 @@ export default class OpenToToggles extends Component {
         @onChange={{set this.settings 'colourStop'}}
         @classes={{hash input='p-1 h-11'}}
       />
-      {{!-- <Checkbox
-        @checked={{this.settings.cropToCircle}}
-        @onChange={{set this.settings 'cropToCircle'}}
-        @label={{t 'toggles.crop-to-circle'}}
-      >
-        {{#if this.settings.cropToCircle}}
-          <Circle />
-        {{else}}
-          <Square />
-        {{/if}}
-      </Checkbox> --}}
-
-      {{!-- <ButtonGroup as |g|>
-        <g.ToggleButton
-          @isSelected={{this.settings.cropToCircle}}
-          @onChange={{set this.settings 'cropToCircle'}}
-        >
-          <Circle />
-        </g.ToggleButton>
-        <g.ToggleButton
-          @isSelected={{not this.settings.cropToCircle}}
-          @onChange={{this.foo}}
-          @onChange={{set this.settings 'cropToCircle'}}
-        >
-          <Square />
-        </g.ToggleButton>
-        {{this.settings.cropToCircle}}
-      </ButtonGroup> --}}
       <RadioGroup
         @label={{t 'toggles.crop-to-circle'}}
         @orientation='horizontal'
@@ -82,6 +54,13 @@ export default class OpenToToggles extends Component {
         <Radio @label={{t 'toggles.crop-to.circle'}} @value={{true}} />
         <Radio @label={{t 'toggles.crop-to.square'}} @value={{false}} />
       </RadioGroup>
+      <Input
+        @type='color'
+        @label={{t 'toggles.background-colour'}}
+        @value={{this.settings.backgroundColour}}
+        @onChange={{set this.settings 'backgroundColour'}}
+        @classes={{hash input='p-1 h-11'}}
+      />
     </form>
   </template>
 }
