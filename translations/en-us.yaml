@@ -8,6 +8,10 @@ toggles:
   text: Text
   colour-start: Colour start
   colour-stop: Colour stop
+  crop-to-circle: Crop to
+  crop-to:
+    circle: Circle
+    square: Square
 export:
   button: Export
 footer:

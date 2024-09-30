@@ -8,9 +8,19 @@ import { hash } from '@ember/helper';
 import { ToggleButton } from '@frontile/buttons';
 import Circle from 'ember-phosphor-icons/components/ph-circle';
 import Square from 'ember-phosphor-icons/components/ph-square';
+import { Checkbox } from '@frontile/forms';
+import { ButtonGroup } from '@frontile/buttons';
+import { fn } from '@ember/helper';
+import { not } from 'ember-truth-helpers';
+import { RadioGroup } from '@frontile/forms';
+import { Radio } from '@frontile/forms';
 
 export default class OpenToToggles extends Component {
   @service settings;
+
+  foo = (a, b) => {
+    console.log(a, b);
+  };
 
   <template>
     <form class='grid grid-cols-1 sm:grid-cols-3 gap-4 items-end'>
@@ -34,8 +44,8 @@ export default class OpenToToggles extends Component {
         @onChange={{set this.settings 'colourStop'}}
         @classes={{hash input='p-1 h-11'}}
       />
-      <ToggleButton
-        @isSelected={{this.settings.cropToCircle}}
+      {{!-- <Checkbox
+        @checked={{this.settings.cropToCircle}}
         @onChange={{set this.settings 'cropToCircle'}}
         @label={{t 'toggles.crop-to-circle'}}
       >
@@ -44,7 +54,34 @@ export default class OpenToToggles extends Component {
         {{else}}
           <Square />
         {{/if}}
-      </ToggleButton>
+      </Checkbox> --}}
+
+      {{!-- <ButtonGroup as |g|>
+        <g.ToggleButton
+          @isSelected={{this.settings.cropToCircle}}
+          @onChange={{set this.settings 'cropToCircle'}}
+        >
+          <Circle />
+        </g.ToggleButton>
+        <g.ToggleButton
+          @isSelected={{not this.settings.cropToCircle}}
+          @onChange={{this.foo}}
+          @onChange={{set this.settings 'cropToCircle'}}
+        >
+          <Square />
+        </g.ToggleButton>
+        {{this.settings.cropToCircle}}
+      </ButtonGroup> --}}
+      <RadioGroup
+        @label={{t 'toggles.crop-to-circle'}}
+        @orientation='horizontal'
+        @value={{this.settings.cropToCircle}}
+        @onChange={{set this.settings 'cropToCircle'}}
+        as |Radio|
+      >
+        <Radio @label={{t 'toggles.crop-to.circle'}} @value={{true}} />
+        <Radio @label={{t 'toggles.crop-to.square'}} @value={{false}} />
+      </RadioGroup>
     </form>
   </template>
 }
