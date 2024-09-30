@@ -17,11 +17,7 @@ export default class OpenToFilesUpload extends Component {
 
   <template>
     {{#let (fileQueue onFileAdded=this.uploadPhoto) as |queue|}}
-      <FileDropzone
-        @queue={{queue}}
-        class='w-full aspect-square rounded-full border-dashed border-4 border-slate-400 flex items-center justify-center'
-        as |dropzone|
-      >
+      <FileDropzone @queue={{queue}} class='' as |dropzone|>
 
         {{#if dropzone.active}}
           <Instructions>
@@ -34,7 +30,10 @@ export default class OpenToFilesUpload extends Component {
         {{else}}
           <div class='relative w-full aspect-square'>
             <div class='absolute top-0 left-0 w-full aspect-square'>
-              <Avatar @file='/images/unicorn.webp' />
+              <Avatar
+                class='border-dashed border-4 border-slate-400'
+                @file='/images/unicorn.webp'
+              />
             </div>
 
             <Instructions>

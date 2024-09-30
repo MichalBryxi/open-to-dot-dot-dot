@@ -79,6 +79,7 @@ export default class OpenToFiles extends Component {
           xlink:href='#curve'
           id='textPath1'
           dx='2.72'
+          startOffset='{{this.settings.textOffset}}'
         >{{this.settings.text}}</textPath></text></svg>
   </template>
 }

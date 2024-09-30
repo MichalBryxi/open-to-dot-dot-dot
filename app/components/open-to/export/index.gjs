@@ -12,6 +12,7 @@ import html2canvas from '@jsplumb/html2canvas';
 
 export default class OpenToExport extends Component {
   @service fileQueue;
+  @service settings;
 
   get isExportDisabled() {
     return this.fileQueue.files.length === 0;
@@ -20,9 +21,11 @@ export default class OpenToExport extends Component {
   @action
   exportImages() {
     for (const file of this.fileQueue.files) {
-      html2canvas(document.getElementById(file.id)).then((canvas) => {
+      html2canvas(document.getElementById(file.id), {
+        backgroundColor: null,
+      }).then((canvas) => {
         var link = document.createElement('a');
-        link.download = 'my-image-name.jpeg';
+        link.download = `${this.settings.text}.png`;
         link.href = canvas.toDataURL('image/png');
         link.click();
       });
