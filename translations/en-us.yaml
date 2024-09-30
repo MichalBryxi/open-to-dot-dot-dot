@@ -13,6 +13,7 @@ toggles:
     circle: Circle
     square: Square
   background-colour: Background colour
+  text-offset: Text offset
 export:
   button: Export
 footer:
