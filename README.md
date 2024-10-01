@@ -9,6 +9,9 @@ And I think that's sad. So I built this little app for everyone to use and creat
 - Custom message. E.g: `#OpenToFun!`
 - Starting gradient colour
 - Stopping gradient colour
+- Crop to circle / square
+- Background color
+- Text offset
 
 The app is deployed on: https://open-to-dot-dot-dot.pudr.com
 
