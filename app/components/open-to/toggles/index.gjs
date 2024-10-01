@@ -18,10 +18,6 @@ import { Radio } from '@frontile/forms';
 export default class OpenToToggles extends Component {
   @service settings;
 
-  foo = (a, b) => {
-    console.log(a, b);
-  };
-
   <template>
     <form class='grid grid-cols-1 sm:grid-cols-3 gap-4 items-end'>
       <Input

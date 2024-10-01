@@ -1,5 +1,20 @@
+{{page-title (t "page-title.application")}}
+
 <div
   class="min-h-screen bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 py-8"
 >
-  <OpenTo />
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"></div>
+  <div class="mx-auto max-w-3xl">
+
+    <div
+      class="divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow"
+    >
+      <div class="px-4 py-5 sm:px-6">
+        <Header />
+      </div>
+
+      {{outlet}}
+
+    </div>
+  </div>
 </div>

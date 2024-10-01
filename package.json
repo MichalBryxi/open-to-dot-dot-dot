@@ -2,8 +2,8 @@
   "name": "open-to-dot-dot-dot",
   "version": "0.0.0",
   "private": true,
-  "description": "Small description for open-to-dot-dot-dot goes here",
-  "repository": "",
+  "description": "Ever since LinkedIn has introduced the #OpenToWork / #OpenToHireoverlays for people's avatars, this feature started living a life of it's own. While some petty humans advise against using this feature, others take it to another level and own it. Sadly this feature is severely limited and apart from work/hire user has no say in customising the message. And I think that's sad. So I built this little app for everyone to use and create their custom made #OpenTo... banners.",
+  "repository": "https://github.com/MichalBryxi/open-to-dot-dot-dot",
   "license": "MIT",
   "author": "",
   "directories": {
