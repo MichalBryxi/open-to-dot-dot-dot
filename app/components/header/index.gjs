@@ -29,7 +29,7 @@ export default class Header extends Component {
       <div>
         <LinkTo
           @route='about'
-          class='text-gray-500'
+          @class='text-gray-500'
           @activeClass='text-emerald-500'
         >
           <Info @weight='duotone' class='w-8 h-8' />
