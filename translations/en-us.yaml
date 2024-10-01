@@ -41,6 +41,9 @@ about:
   privacy:
     label: Privacy
     description: This entire application works entirely in your web browser. There are no trackers installed. And I even don't collect any usage statistics on the server side.
+  ember:
+    label: Built with EmberJS
+    description: A framework for ambitious web developers. Ember.js is a productive, battle-tested JavaScript framework for building modern web applications. It includes everything you need to build rich UIs that work on any device.
 page-title:
   application: "#OpenTo..."
   index: "Avatar generator"
