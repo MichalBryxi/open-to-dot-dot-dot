@@ -8,6 +8,7 @@ import UserCheck from 'ember-phosphor-icons/components/ph-user-check';
 import Chat from 'ember-phosphor-icons/components/ph-chat-centered-dots';
 import Coins from 'ember-phosphor-icons/components/ph-coins';
 import Detective from 'ember-phosphor-icons/components/ph-detective';
+import Fire from 'ember-phosphor-icons/components/ph-fire';
 import AboutItem from './item';
 import { inject as service } from '@ember/service';
 
@@ -54,6 +55,12 @@ export default class About extends Component {
         label: this.intl.t('about.github.label'),
         icon: GitHubLogo,
         description: this.intl.t('about.github.description'),
+      },
+      {
+        href: 'https://emberjs.com',
+        label: this.intl.t('about.ember.label'),
+        icon: Fire,
+        description: this.intl.t('about.ember.description'),
       },
       {
         href: 'https://opensource.org/license/MIT',
