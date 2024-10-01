@@ -4,7 +4,7 @@ import LinkedInLogo from 'ember-phosphor-icons/components/ph-linkedin-logo';
 import TipJar from 'ember-phosphor-icons/components/ph-tip-jar';
 import { t } from 'ember-intl';
 
-export default class OpenToFiles extends Component {
+export default class About extends Component {
   <template>
     <a
       href='https://github.com/MichalBryxi/open-to-dot-dot-dot'
