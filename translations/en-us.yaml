@@ -38,6 +38,9 @@ about:
   feedback:
     label: Write me
     description: Questions? Suggestions? Feedback? Or you'd just want to share a screenshot how you used the app? Feel free to send me an email.
+  privacy:
+    label: Privacy
+    description: This entire application works entirely in your web browser. There are no trackers installed. And I even don't collect any usage statistics on the server side.
 page-title:
   application: "#OpenTo..."
   index: "Avatar generator"

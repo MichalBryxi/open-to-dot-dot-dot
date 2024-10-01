@@ -7,6 +7,7 @@ import Stamp from 'ember-phosphor-icons/components/ph-stamp';
 import UserCheck from 'ember-phosphor-icons/components/ph-user-check';
 import Chat from 'ember-phosphor-icons/components/ph-chat-centered-dots';
 import Coins from 'ember-phosphor-icons/components/ph-coins';
+import Detective from 'ember-phosphor-icons/components/ph-detective';
 import AboutItem from './item';
 import { inject as service } from '@ember/service';
 
@@ -24,6 +25,11 @@ export default class About extends Component {
         label: this.intl.t('about.pricing.label'),
         icon: Coins,
         description: this.intl.t('about.pricing.description'),
+      },
+      {
+        label: this.intl.t('about.privacy.label'),
+        icon: Detective,
+        description: this.intl.t('about.privacy.description'),
       },
       {
         href: 'https://www.linkedin.com/posts/courtneysummer_desperate-opentowork-opentowork-activity-7241410975193513984-vexX?utm_source=share&utm_medium=member_desktop',
