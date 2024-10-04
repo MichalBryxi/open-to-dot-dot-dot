@@ -1,8 +1,14 @@
 import Component from '@glimmer/component';
 import { inject as service } from '@ember/service';
 
+const TEXT_OFFSET_MAX = 200;
+
 export default class OpenToFiles extends Component {
   @service settings;
+
+  get textOffsetAdjusted() {
+    return TEXT_OFFSET_MAX * (this.settings.textOffset / 100);
+  }
 
   <template>
     <svg
@@ -79,7 +85,7 @@ export default class OpenToFiles extends Component {
           xlink:href='#curve'
           id='textPath1'
           dx='2.72'
-          startOffset='{{this.settings.textOffset}}'
+          startOffset='{{this.textOffsetAdjusted}}'
         >{{this.settings.text}}</textPath></text></svg>
   </template>
 }

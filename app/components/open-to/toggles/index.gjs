@@ -57,13 +57,23 @@ export default class OpenToToggles extends Component {
         @onChange={{set this.settings 'backgroundColour'}}
         @classes={{hash input='p-1 h-11'}}
       />
+
+      <datalist id='markers'>
+        <option value='0'></option>
+        <option value='25'></option>
+        <option value='50'></option>
+        <option value='75'></option>
+        <option value='100'></option>
+      </datalist>
       <Input
         @type='range'
         @label={{t 'toggles.text-offset'}}
         @value={{this.settings.textOffset}}
         @onInput={{set this.settings 'textOffset'}}
+        @classes={{hash input='appearance-auto'}}
         min='0'
-        max='200'
+        max='100'
+        list='markers'
       />
     </form>
   </template>
