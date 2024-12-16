@@ -2,7 +2,7 @@ application:
   name: '#OpenTo...'
   subtitle: LinkedIn avatar generator
 drag-and-drop:
-  instructions: Drop your image here
+  instructions: Drop your images here
   drop-now: Drop it!
 toggles:
   text: Text
